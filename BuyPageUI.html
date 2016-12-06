@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+
+<!-- slide show -->
+
+<link href="js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="js-image-slider.js" type="text/javascript"></script>
+    <link href="generic.css" rel="stylesheet" type="text/css" />
+
+ <!-- Insert to your webpage before the </head> -->
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/jquery.js"></script>
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/amazingslider.js"></script>
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/initslider-1.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Home Page</title>
+ <style>
+/* body  {
+    background-image: url("images/pets.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+}
+ */</style>
+ <style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<style type="text/css">
+
+#cart{
+ /* margin-top: 53px; */
+    padding-right: 1px;
+   /*  margin-right: -131px; */
+   
+}
+
+.dropdown:hover{
+	 background-color:green;  
+		/* color:blue; */ 
+	
+}
+.navbar-inner{
+    height: 30px;
+    min-height: 10px
+    }
+.navbar .brand{
+    padding: 0 10px;
+}
+.navbar .nav > li > a {
+    padding: 10px 60px;
+    /*padding: 35px 15px;*/
+}
+.navbar .btn-navbar {
+    /*margin-right: 0px;*/
+    margin-top:15px;
+}
+.brand img{
+    margin-top: 5px
+}
+@media (max-width:768px) {
+    .brand img{
+        margin-bottom: 5px
+    }
+    .navbar .btn-navbar{
+   /* margin-right: -15px; */
+    }
+    .navbar .nav > li > a {
+        padding: 10px 15px ;
+       
+    }
+}
+.se{
+	margin-bottom: 10px;
+	margin-top: 28%
+}
+
+
+
+/* image scroll */
+@import url(http://fonts.googleapis.com/css?family=Anaheim);
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+    box-sizing: border-box;
+}
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+/* html,
+body{
+	min-height: 100%;
+} */
+/* body{
+	background-image: radial-gradient(mintcream 0%, lightgray 100%);
+} */
+h1{
+	display: table;
+	margin: 5% auto 0;
+	text-transform: uppercase;
+	font-family: 'Anaheim', sans-serif;
+	font-size: 4em;
+	font-weight: 400;
+	text-shadow: 0 1px white, 0 2px black;
+}
+/* .imgScroll{
+	margin: 4% auto;
+	width: 210px;
+	height: 140px;
+	position: relative;
+	perspective: 1000px;
+}
+#carousel{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 20s infinite linear;
+}
+#carousel:hover{
+	animation-play-state: paused;
+}
+#carousel figure{
+	display: block;
+	position: absolute;
+	width: 90%;
+	height: 50%px;
+	left: 10px;
+	top: 10px;
+	background: black;
+	overflow: hidden;
+	border: solid 5px black;
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+img{
+	 -webkit-filter: grayscale(1); 
+	cursor: pointer;
+	transition: all .5s ease;
+}
+img:hover{
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+.menu-down{
+	z-index: 1;
+} */
+</style>
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="row" style="background-color: SandyBrown  ;" >
+		 <div class="navbar ">
+		        <div class="navbar-inner" >
+		            <!-- <a class="brand" href="#">
+		            	<img src="images/logo2.png" alt="LOGO" style="border-radius: 10px;">
+		            </a> -->
+		          
+		            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" href="index.jsp">
+		            	<span class="icon-bar">Home</span>
+		            </a>
+		             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				            <span class="icon-bar">About Us</span>
+		            </a>
+		             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				            <span class="icon-bar">Contact Us</span>
+		            </a>
+		            <a class="btn btn-navbar navbar-right "   data-toggle="collapse" data-target=".nav-collapse">
+				       
+		            </a>
+		            <div class="navbar-right header-right">
+        <span class="btn btn-navbar navbar-right" ><a    href="LoginPage.html">Login</a> /
+           <a    href="SignUpPage2.html">SignUp</a></span>
+     </div>
+		              <a class="btn btn-navbar navbar-right" data-toogle="collapse"" data-target=".nav-collapse">
+                <!-- <span class="icon-bar glyphicon glyphicon-user line "></span>  -->Customer Care
+                </a>
+                
+                <a class="btn btn-navbar navbar-right" id="cart" data-toogle="collapse" data-target=".nav-collpase">
+                <span class="icon-bar glyphicon glyphicon-shopping-cart"></span> Cart
+                </a>
+                
+               
+		       
+</div>
+</div>
+</div>
+</div>
+
+<form action="">
+<br><br>	
+<div class="row"></div>
+&nbsp;&nbsp;&nbsp;&nbsp;<select  style="background-color: black;color: white;    padding: 3px 29px;font-size: 13px;">
+
+<option>Select</option>
+<option>Bread</option>
+<option>PUG</option>
+
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;<select  style="background-color: black;color: white;    padding: 3px 29px;font-size: 13px;">
+
+<option>Select Price</option>
+<option>200 - 399</option>
+<option>400 - 499</option>
+<option>500 - 599</option>
+<option>600 - 699</option>
+
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;<select  style="background-color: black;color: white;    padding: 3px 29px;font-size: 13px;">
+
+<option>Select Color</option>
+<option>blue</option>
+<option>black</option>
+<option>white</option>
+<option>red</option>
+<option>yellow</option>
+<option>green</option>
+
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;<select  style="background-color: black;color: white;    padding: 3px 29px;font-size: 13px;">
+
+<option>Select Pet Age</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+
+</select>
+
+<input type="submit" value="submit" style="background-color: black;color: white;padding: 4px 13px;font-size: 13px;margin: 0 16px;"/>
+</form>
+
+<!-- <div>
+
+	<img class="col" alt="" src="images/logo1.jpg" width="300"></img>
+	<img alt="" src="images/logo2.png" style="margin-left: 22%;"></img>
+	<img alt="" src="images/logo3.jpg" style="float : right;"></img>
+
+</div> -->
+<link href="6/thumbnail-slider.css" rel="stylesheet" />
+    <script src="6/thumbnail-slider.js" type="text/javascript"></script>
+    <style>
+        body {font: normal 0.9em Arial;color:#ddd;/* background:#333; */}
+        header {display:block; font-size:1.2em;margin-bottom:100px;}
+        header a, header span {
+            display: inline-block;
+            padding: 4px 8px;
+            margin-right: 10px;
+            border: 2px solid #000;
+            background: #DDD;
+            color: #000;
+            text-decoration: none;
+            text-align: center;
+            height: 20px;
+        }
+        header span {background:white;}
+        a {color:#7fa9fe;}
+    </style>
+
+
+    <!--start-->
+    <div style="padding:100px 0;/* background:#333; */">
+        <div id="thumbnail-slider" style="display:none;">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <a class="thumb" href="images/dog.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/dog.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/dog.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/dog.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/dog.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/dog.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/dog.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/dog.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="images/dog.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="closeBtn">CLOSE</div>
+        </div>
+		
+        <ul id="myGallery">
+            <li><img class="col-sm-4 col-md-4 col-xs-4" src="images/dog.jpg" style="margin: 0 0px 0px -351px;width: 400px;"/>
+             <div class="row">
+		
+		<p style="font-size: 26px;margin: 289px -310px;color: black;">AddtoCart</p>
+		<p style="font-size: 26px;margin: -322px -121px;color: black;">Buy</p>
+		
+		</div>
+            </li>
+           
+            <li><img class="col-sm-4 col-md-4 col-xs-4" src="images/dog.jpg" style="margin-left: -60px;"/>
+            
+             <div class="row">
+		
+		<p style="font-size: 26px;margin: 289px -24px;color: black;">AddtoCart</p>
+		<p style="font-size: 26px;margin: -322px 197px;color: black;">Buy</p>
+		
+		</div>
+            
+            </li>
+            <li><img class="col-sm-4 col-md-4 col-xs-4" src="images/dog.jpg" style="margin-left: 205px;" />
+            
+            <div class="row">
+		
+		<p style="font-size: 26px;margin: 288px 250px;color: black;">AddtoCart</p>
+		<p style="font-size: 26px;margin: -322px 483px;color: black;">Buy</p>
+		
+		</div>
+            
+            </li>
+            <li><img  class="col-sm-4 col-md-4 col-xs-4" src="images/dog.jpg" style="margin: 100px 0px 0px -551px;width: 400px;"/>
+            
+            <div class="row">
+		
+		<p style="font-size: 26px;margin: 383px -497px;color: black;">AddtoCart</p>
+		<p style="font-size: 26px;margin: -412px -268px;color: black;">Buy</p>
+		
+		</div>
+            
+            
+            </li>
+            <li><img class="col-sm-4 col-md-4 col-xs-4" src="images/dog.jpg" style="margin-left: -258px;margin-top: 100px;"/>
+            
+            
+            <div class="row">
+		
+		<p style="font-size: 26px;margin: 383px -225px;color: black;">AddtoCart</p>
+		<p style="font-size: 26px;margin: -412px 36px;color: black;">Buy</p>
+		
+		</div>
+            
+            
+            </li>
+            <li><img class="col-sm-4 col-md-4 col-xs-4" src="images/dog.jpg" style="margin-top: -267px;margin-left: 206px;"/>
+            
+              <div class="row">
+		
+		<p style="font-size: 26px;margin: 16px 248px;color: black;">AddtoCart</p>
+		<p style="font-size: 26px;margin: -49px 478px;color: black;">Buy</p>
+		
+		</div>
+            
+            </li>
+            <li><img class="col-sm-4 col-md-4 col-xs-4" src="images/dog.jpg" style="margin: 86px -750px;" />
+            
+            <div class="row">
+		
+		<p style="font-size: 26px;margin: 383px -699px;color: black;">AddtoCart</p>
+		<p style="font-size: 26px;margin: -412px -461px;color: black;">Buy</p>
+		
+		</div>
+            
+            </li>
+            <li><img class="col-sm-4 col-md-4 col-xs-4" src="images/dog.jpg" style="    margin: -356px 140px;"/>
+            
+            <div class="row">
+		
+		<p style="font-size: 26px;margin: -58px 193px;color: black;">AddtoCart</p>
+		<p style="font-size: 26px;margin: 26px 443px;color: black;">Buy</p>
+		
+		</div>
+            
+            </li>
+            <li><img class="col-sm-4 col-md-4 col-xs-4" src="images/dog.jpg" style="margin: -356px 406px;"/>
+            
+            <div class="row">
+		
+		<p style="font-size: 26px;margin: -55px 463px;color: black;">AddtoCart</p>
+		<p style="font-size: 26px;margin: 20px 699px;color: black;">Buy</p>
+		
+		</div>
+            
+            </li>
+        </ul>
+
+        <div style="clear:both;"></div>
+        <script>
+            //Note: this script should be placed at the bottom of the page, or after the slider markup. It cannot be placed in the head section of the page.
+            var thumbSldr = document.getElementById("thumbnail-slider");
+            var closeBtn = document.getElementById("closeBtn");
+            var galleryImgs = document.getElementById("myGallery").getElementsByTagName("img");
+            for (var i = 0; i < galleryImgs.length; i++) {
+                galleryImgs[i].index = i;
+                galleryImgs[i].onclick = function (e) {
+                    var li = this;
+                    thumbSldr.style.display = "block";
+                    mcThumbnailSlider.init(li.index);
+                };
+            }
+
+            thumbSldr.onclick = closeBtn.onclick = function (e) {
+                //This event will be triggered only when clicking the area outside the thumbs or clicking the CLOSE button
+                thumbSldr.style.display = "none";
+            };
+        </script>
+    </div>
+
+    <!--end-->
+    <!-- <div style="max-width:700px;margin:0 auto 80px;background:#333;">
+        <header><a href="demo1.html">Demo 1</a> <a href="demo2.html">Demo 2</a> <a href="demo3.html">Demo 3</a> <a href="demo4.html">Demo 4</a> <a href="demo5.html">Demo 5</a> <span>Demo 6</span></header>
+        <h1>Demo 6: Using jQuery Slider as a Lightbox</h1>
+        <p>&nbsp;</p>
+        <p>
+            Clicking the image gallery will pop up the jQuery slider as a lightbox to show the image details.
+        </p>
+        <p>We added a script into the page that will hide the jQuery Slider lightbox by default. It will display when the the gallery images are clicked.</p>
+        <p>Please visit <a href="http://www.menucool.com/slider/jquery-slider-lightbox">Demo 6: Using jQuery Slider as a Lightbox</a> for detailed instructions, or 
+            visit the <a href="http://www.menucool.com/jquery-slider">Full documentation of the image slider</a>.</p>
+
+    </div> -->
+
+<div style="background-color: skyblue; margin-top: 14%;padding-top: 4%;">
+<footer >
+<p> copy right @ 2016 </p>
+</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Login Page</title>
+
+<!-- Bootstrap Validato -->
+
+
+<!-- <style type="text/css">
+	body{
+	
+	background-image: url("images/pets.jpg");
+	
+    background-color: #525252;
+}
+
+
+</style>
+
+ -->
+<script type="text/javascript">
+
+function validateForm() {
+	
+	var email=document.forms["myForm"]["username"].value;
+	var email_match=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	var psw=document.forms["myForm"]["psw"].value;
+	if(email=="" ){
+		alert("Please Enter Email Address");
+		return false;
+	}
+	
+	if(!email_match.test(email)){
+		
+		alert("Please Enter Valid Email Address");
+		return false;
+		
+	}
+	
+	else if(psw==""){
+		alert("Please Enter Password");
+		return false;
+	}
+	else{
+		alert("successfully Login");
+		window.open('WELCOME.html');
+	}
+}
+
+</script>
+ 
+ 
+ </head>
+  
+<body background="red-background.jpg">
+					<!-- logo bar -->
+<div class="container-fluid">
+	<div class="row" style="background-color: SandyBrown  ;" >
+		 <div class="navbar ">
+		        <div class="navbar-inner" style="margin-top: 15px;">
+		            <!-- <a class="brand" href="#">
+		            	<img src="images/logo2.png" alt="LOGO" style="border-radius: 10px;">
+		            </a> -->
+		          
+		            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" href="index.jsp">
+		            	<span class="icon-bar">Home</span>
+		            </a>
+		             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				            <span class="icon-bar">About Us</span>
+		            </a>
+		             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				            <span class="icon-bar">Contact Us</span>
+		            </a>
+		            <a class="btn btn-navbar navbar-right "   data-toggle="collapse" data-target=".nav-collapse">
+				       
+		            </a>
+
+		             <a class="btn btn-navbar navbar-right" data-toogle="collapse"" data-target=".nav-collapse">
+                <!-- <span class="icon-bar glyphicon glyphicon-user line "></span>  -->Customer Care
+                </a>
+                
+                <a class="btn btn-navbar navbar-right" id="cart" data-toogle="collapse" data-target=".nav-collpase">
+                <span class="icon-bar glyphicon glyphicon-shopping-cart"></span> Cart
+                </a>
+		       
+		            
+		            <!-- <a class="btn btn-navbar  navbar-right " style="margin-top: 30px;" href="LoginPage.html" data-toggle="collapse" data-target=".nav-collapse">
+				         <span class=" icon-bar glyphicon glyphicon-log-in"></span> Login
+		          
+		             <a class="btn btn-navbar navbar-right " href="SignUpPage.html" style="margin-top: 30px;" data-toggle="collapse" data-target=".nav-collapse">
+				            <span class="icon-bar glyphicon glyphicon-user line "></span>SignUp
+				            
+		            </a>  -->
+		            
+		            
+		         </div>
+   		 </div>
+    </div>
+
+		<!-- login form -->
+		<div class="container">
+        <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        	<div class="panel panel-default">
+        		<div class="panel-heading" style="background-color: skyblue;">
+			    		<h3 class="panel-title">Login here.. </h3>
+			    		 </div>
+			 	<div class="panel-body">
+			    		<form role="form" id="submit" name="myForm" onsubmit="return validateForm()" >
+			    			<div class="row">
+								<div class=" col-md-12  ">
+							    	<div class="form-group">
+							    		<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+											<input type="text" class="form-control" name="username" placeholder="email address">
+										</div>
+							    	</div>
+				    			 </div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class=" col-md-12  ">
+						    		<div class="form-group">
+						    			<div class="input-group">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+							    			<input type="password" name="psw" id="psw" class="form-control input-sm" placeholder="Password">
+						    			</div>
+						    		</div>
+						    	</div>
+			    			</div>
+			    			
+			    			<div class="row" >  
+			    				<div class=" col-md-12  ">  			
+			    					<input type="submit"   value="SignIn" class="btn btn-info btn-block"/>
+			    				</div>
+			    			</div></form>
+			    			 <div class="row">
+			    				<div class="col-md-12">
+			    						Don't have account? <a href="SignUpPage2.html" id="submit">SignUp</a>
+			    				</div>
+			    			<a href="#" style="    margin-left: 16px;">Forgot password?</a>
+			 	</div>
+			    			</div> 
+			    		
+			    </div>
+			</div>
+	 	 </div>
+    </div>
+  </div>
+  
+ <!--  <script type="text/javascript">
+	("#submit").click(function(){
+		alert("hii");
+	    $("#cpet").open("#drpdn");
+	});</script> -->
+    <div style="background-color: skyblue; margin-top: 14%;padding-top: 4%;">
+<footer >
+<p> copy right @ 2016 </p>
+</footer>
+</div>
+    
+</body>
+</html>
